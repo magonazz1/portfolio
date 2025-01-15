@@ -145,8 +145,9 @@ nav .sticky .media-icons a {
     color: #00bf63;
 }
 .home .text-four {
-    font-size: 23px;
+    font-size: 20px;
     margin: 5px 0;
+    font-family: jaf-mashine-rounded, sans-serif;
 }
 .home .button {
     margin: 14px 0;
