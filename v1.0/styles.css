@@ -102,3 +102,63 @@ nav .sticky .media-icons a {
     color: #f1f1f1;
 }
 
+/* Home section styling */
+.home {
+    background-color: black;
+    height: 100vtc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    font-family: "Ubuntu",sans-serif;
+}
+.home .image {
+    height: 100%;
+    width: 100%
+}
+.home .image img {
+    width: 65%
+}
+.home .home-content {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.home .text-one {
+    font-size: 25px;
+}
+.home .text-two {
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-three {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 5px 0;
+    color: #4070f4;
+}
+.home .text-four {
+    font-size: 23px;
+    margin: 5px 0;
+}
+.home .button {
+    margin: 14px 0;
+}
+.home .button button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
