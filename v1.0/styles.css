@@ -16,12 +16,12 @@
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background: #00bf63;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
+    background: #00bf63;
 }
 
 /* Navbar Styling */
@@ -38,7 +38,7 @@ nav {
     font-family: 'Ubuntu', sans-serif;
 }
 nav .sticky {
-    background: #4070f4;
+    background: #00bf63;
     padding: 13px 0;
 }
 nav .navbar {
@@ -51,7 +51,7 @@ nav .navbar {
 nav .navbar .logo a {
     font-weight: 600;
     font-size: clamp(1rem, 1rem +2vw, 2rem);
-    color: #4070f4;
+    color: #00bf63;
 }
 nav .sticky .navbar .logo a{
     color: #f1f1f1;
@@ -79,15 +79,14 @@ nav .navbar .menu li {
     bottom: -4px;
     height: 3px;
     width: 0%;
-    background-color: #4070f4;
+    background-color: #00bf63;
     transition: 0.2s ease;
 }
 .navbar .menu a:hover,
 .navbar .menu a:hover::before {
     width: 100%;
-    color: #4070f4;
+    color: #00bf63;
 }
-
 nav .sticky .menu a {
     color: #f1f1f1;
 }
@@ -142,7 +141,7 @@ nav .sticky .media-icons a {
     font-size: 30px;
     font-weight: 800;
     margin: 5px 0;
-    color: #4070f4;
+    color: #00bf63;
 }
 .home .text-four {
     font-size: 23px;
@@ -157,7 +156,7 @@ nav .sticky .media-icons a {
     border-radius: 6px;
     font-size: 25px;
     font-weight: 400;
-    background: #4070f4;
+    background: #00bf63;
     color: white;
     border: 2px solid transparent;
     transition: all 0.4s ease;
