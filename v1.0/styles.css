@@ -105,7 +105,7 @@ nav .sticky .media-icons a {
 /* Home section styling */
 .home {
     background-color: black;
-    height: 100vtc;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -164,6 +164,92 @@ nav .sticky .media-icons a {
     transition: all 0.4s ease;
 }
 .home .button button:hover {
+    border-color: #00bf63;
+    background-color: white;
+    color: #00bf63;
+}
+/* About section styling */
+section {
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+}
+section .content {
+    width: 80%;
+    margin: 0px auto;
+    font-family: "Poppins", sans-serif;
+}
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #00bf63;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details .left {
+    width: 45%;
+}
+.about .left img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about-details .right {
+    width: 50%;
+}
+section .topic p {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .right p {
+    text-align: justify;
+    color: white;
+}
+section .button {
+    margin: 16px 0;
+}
+section .button button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #00bf63;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+section .button button:hover {
     border-color: #00bf63;
     background-color: white;
     color: #00bf63;
