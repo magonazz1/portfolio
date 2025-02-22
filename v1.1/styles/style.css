@@ -184,22 +184,27 @@ nav ul li a:hover {
     }
 }
 /* Tech Stack Section */
-#tech-stack {
+#tech-stack-container {
     padding: 50px 20px;
     background-color: #f4f4f4; /* Light background */
 }
-#tech-stack h2 {
+#tech-card h2 {
     text-align: center;
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
 }
 
-#tech-stack h3 {
+#tech-card h3 {
     text-align: center;
     font-size: 24px;
     color: #333;
     margin-bottom: 30px;
+}
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 /* Tech Row Layout */
 .tech-row {
@@ -211,16 +216,21 @@ nav ul li a:hover {
 }
 
 /* Tech Item (Icon + Name) */
-.tech-item {
-    width: 100px; /* width of each tech item */
+.tech-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
     text-align: center;
+    width: 100px; /* width of each tech card */
+    margin: 10px;
 }
-.tech-item img {
+.tech-card img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
-.tech-item p {
+.tech-card p {
     font-size: 14px;
     color: #333;
     margin-top: 5px;
@@ -229,14 +239,14 @@ nav ul li a:hover {
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
-    .tech-row {
+    .tech-card {
         flex-direction: column;
         align-items: center;
     }
-    .tech-item {
-        width: 80%; /* Make each item tae up more space */
+    .tech-card {
+        width: 40%; /* Make each item tae up more space */
     }
-    .tech-item img {
+    .tech-card img {
         width: 40px;
         height: 40px;
     }
@@ -253,28 +263,43 @@ nav ul li a:hover {
     font-size: 36px;
     margin-bottom: 30px;
 }
+/* Bio Card */
+.bio-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+    overflow: hidden; /* ensures the rounded corners work well */
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* centers the card */
+}
+/* Bio container (text and image) */
 .bio-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
+/* Bio Text */
 .bio-text {
     flex: 1;
     font-size: 18px;
     line-height: 1.6;
     max-width: 60%;
+    text-align: justify;
 }
 .bio-text p {
     margin-bottom: 15px;
 }
+/* Bio Image */
 .bio-image img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow around the image */
 }
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .bio-container {
         flex-direction: column;
@@ -284,7 +309,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
     .bio-image img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
