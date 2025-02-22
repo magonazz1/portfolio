@@ -20,7 +20,7 @@ jobs:
         run: |
           lftp -f "
           open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
-          mirror -R ./ /htdocs  # This uploads your files to InfinityFree.
+          mirror -R ./v1.1/ /htdocs  # This uploads your files to InfinityFree.
           quit
           "
         env:
