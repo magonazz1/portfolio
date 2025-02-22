@@ -1,0 +1,29 @@
+name: Deploy to InfinityFree
+
+on:
+  push:
+    branches:
+      - main  # This means the action runs when you push updates to the "main" branch.
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # This is the computer GitHub will use to run the action.
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # This step gets the files from your GitHub repo.
+
+      - name: Install FTP client
+        run: sudo apt-get install lftp  # This installs the FTP tool needed to upload files.
+
+      - name: Deploy to InfinityFree
+        run: |
+          lftp -f "
+          open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
+          mirror -R ./ /htdocs  # This uploads your files to InfinityFree.
+          quit
+          "
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
