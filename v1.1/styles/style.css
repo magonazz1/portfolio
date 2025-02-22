@@ -26,6 +26,7 @@ nav ul li a {
     transition: color 0.3s ease; /* Smooth transition on hover */
     margin: 10px;
 }
+
 nav ul li a:hover {
     color: #f39c12; /* Change color on hover */
 }
@@ -36,9 +37,11 @@ nav ul li a:hover {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center the items */
     }
+
     nav ul li {
         margin: 10px 0; /* Space between items */
     }
+
     nav ul li a {
         font-size: 16px; /* Slightly smaller font size on mobile */
     }
@@ -51,23 +54,28 @@ nav ul li a:hover {
     color: white;
     cursor: pointer;
 }
+
 /* Show the hamburger icon on small screens */
 @media (max-width: 768px) {
     .hamburger {
         display: block; /* Show hamburger menu on smaller screens */
     }
+
     nav ul {
         display: none; /* Hide the menu by default on small screens */
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* center the items */
     }
+
     nav ul li {
         margin: 10px 0; /* Add space between items */
     }
+
     nav ul.show {
         display: flex; /* Show the menu when toggled */
     }
 }
+
 /* Hero section */
 #hero {
     display: flex;
@@ -76,20 +84,23 @@ nav ul li a:hover {
     padding: 50px 20px;
     background-color: #f4f4f4; /* Light background */
 }
+
 .hero-content {
     width: 60%;
 }
+
 .hero-content h2 {
     font-size: 36px;
     color: #333;
 }
+
 .hero-content p {
     font-size: 18px;
     color: #666;
-    /* text-align: justify; */
     line-height: 1.6;
     margin: 10px 0;
 }
+
 .hero-image img {
     width: 400px;
     height: 400px;
@@ -97,40 +108,48 @@ nav ul li a:hover {
     object-fit: cover;
     border: 5px solid #f39c12; /* Add a border for styling */
 }
+
 /* Responsive Design for about section */
 @media (max-width: 768px) {
     #hero {
         flex-direction: column;
         align-items: center;
     }
+
     .hero-content {
         width: 80%;
         text-align: center;
     }
+
     .hero-image img {
         width: 250px;
         height: 250px;
     }
 }
+
 /* Project Section */
 #projects {
     padding: 50px 20px;
     background-color: #f4f4f4; /* Light background */
 }
+
 #projects h2 {
     text-align: center;
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
 }
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Space between cards */
 }
+
 .project-card {
     width: 300px;
+    height: 500px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -139,16 +158,19 @@ nav ul li a:hover {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .project-card h3 {
     font-size: 24px;
     color: #333;
     margin: 15px 0;
 }
+
 .project-card p {
     font-size: 16px;
     text-align: justify;
@@ -156,6 +178,7 @@ nav ul li a:hover {
     padding: 0 10px;
     margin-bottom: 20px;
 }
+
 .project-card .btn {
     display: inline-block;
     background-color: #f39c12; /* Botton color */
@@ -166,89 +189,110 @@ nav ul li a:hover {
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
+
 .project-card .btn:hover {
     background-color: #e67e22; /* Darker color on hover */
 }
+
 .project-card:hover {
     transform: translateY(-5px); /* Liff the card on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
+
 /* Responsive Design for project cards */
 @media (max-width: 768px) {
     .projects-container {
         flex-direction: column;
         align-items: center;
     }
+
     .project-card {
         width: 90%; /* Make the cards fill more space on smaller screens */
     }
 }
 /* Tech Stack Section */
-#tech-stack-container {
+#tech-stack {
     padding: 50px 20px;
     background-color: #f4f4f4; /* Light background */
 }
-#tech-card h2 {
+
+#tech-stack h2 {
     text-align: center;
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
 }
 
-#tech-card h3 {
+#tech-stack h3 {
     text-align: center;
     font-size: 24px;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
 .tech-stack-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
 /* Tech Row Layout */
 .tech-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between icons */
-    margin-bottom: 30px; /* space between rows */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 30px; /* Space between rows */
 }
 
-/* Tech Item (Icon + Name) */
+/* Tech Card (Icon + Name) */
 .tech-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
     padding: 20px;
-    text-align: center;
-    width: 100px; /* width of each tech card */
-    margin: 10px;
+    text-align: center; /* Center text horizontally */
+    width: 150px; /* Width of each tech card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically and horizontally */
+    justify-content: center; /* Center content vertically */
 }
+
+.tech-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
 .tech-card img {
-    width: 50px;
-    height: 50px;
+    width: 64px; /* Icon size */
+    height: 64px;
     margin-bottom: 10px;
 }
+
 .tech-card p {
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
-    margin-top: 5px;
-    text-transform: capitalize; /* Make the name title uppercase */
+    margin: 0;
+    text-transform: capitalize; /* Make the name title case */
+    text-align: center; /* Ensure text is centered */
 }
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .tech-card {
-        flex-direction: column;
-        align-items: center;
+        width: calc(33.33% - 20px); /* 3 columns with gap included */
+        padding: 15px; /* Slightly reduce padding for mobile */
     }
-    .tech-card {
-        width: 40%; /* Make each item tae up more space */
-    }
+
     .tech-card img {
-        width: 40px;
-        height: 40px;
+        width: 48px; /* Smaller icons for mobile */
+        height: 48px;
+    }
+
+    .tech-card p {
+        font-size: 14px; /* Smaller text for mobile */
     }
 }
 
@@ -258,11 +302,13 @@ nav ul li a:hover {
     background-color: #fff; /* white background */
     color: #333;
 }
+
 #bio h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
 }
+
 /* Bio Card */
 .bio-card {
     background-color: #fff; /* White background for the card */
@@ -273,6 +319,7 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto; /* centers the card */
 }
+
 /* Bio container (text and image) */
 .bio-container {
     display: flex;
@@ -280,6 +327,7 @@ nav ul li a:hover {
     align-items: center;
     gap: 40px;
 }
+
 /* Bio Text */
 .bio-text {
     flex: 1;
@@ -288,9 +336,11 @@ nav ul li a:hover {
     max-width: 60%;
     text-align: justify;
 }
+
 .bio-text p {
     margin-bottom: 15px;
 }
+
 /* Bio Image */
 .bio-image img {
     width: 400px;
@@ -299,15 +349,18 @@ nav ul li a:hover {
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow around the image */
 }
+
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .bio-container {
         flex-direction: column;
         text-align: center;
     }
+
     .bio-text {
         max-width: 100%;
     }
+
     .bio-image img {
         width: 250px;
         height: 250px;
