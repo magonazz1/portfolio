@@ -28,3 +28,42 @@ nav ul li a {
 nav ul li a:hover {
     color: #f39c12; /* Change color on hover */
 }
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+    nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font size on mobile */
+    }
+}
+
+/* Hide the hamburger icon and menu by default on large screens */
+.hamburger {
+    display: none; /* Hide on larger screens */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Show the hamburger icon on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+    nav ul {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* center the items */
+    }
+    nav ul li {
+        margin: 10px 0; /* Add space between items */
+    }
+    nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+}

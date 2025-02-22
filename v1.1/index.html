@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Dev</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation menu will go here -->
      <nav>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!--Hamburger icon-->
+        <ul id="menu">
             <li><a href="#logo">Logo</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#tech_stack">Tech Stack</a></li>
