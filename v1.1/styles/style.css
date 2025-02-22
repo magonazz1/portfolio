@@ -182,3 +182,55 @@ nav ul li a:hover {
         width: 90%; /* Make the cards fill more space on smaller screens */
     }
 }
+/* Tech Stack Section */
+#tech-stack {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light background */
+}
+
+#tech-stack h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* Tech Row Layout */
+.tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 30px; /* space between rows */
+}
+
+/* Tech Item (Icon + Name) */
+.tech-item {
+    width: 100px; /* width of each tech item */
+    text-align: center;
+}
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.tech-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    text-transform: capitalize; /* Make the name title uppercase */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .tech-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-item {
+        width: 80%; /* Make each item tae up more space */
+    }
+    .tech-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
