@@ -1,0 +1,30 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for nav */
+    padding: 10px 0; /* Padding on top and bottom */
+}
+
+nav ul {
+    list-style: none; /* Remove bullets from list */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color */
+    font-size: 18px; /* Text size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase letters */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+nav ul li a:hover {
+    color: #f39c12; /* Change color on hover */
+}
