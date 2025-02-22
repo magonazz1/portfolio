@@ -24,6 +24,7 @@ nav ul li a {
     font-weight: bold; /* Bold text */
     text-transform: uppercase; /* Uppercase letters */
     transition: color 0.3s ease; /* Smooth transition on hover */
+    margin: 10px;
 }
 nav ul li a:hover {
     color: #f39c12; /* Change color on hover */
@@ -188,7 +189,7 @@ nav ul li a:hover {
     background-color: #f4f4f4; /* Light background */
 }
 
-#tech-stack h2 {
+#tech-stack h3 {
     text-align: center;
     font-size: 36px;
     color: #333;
