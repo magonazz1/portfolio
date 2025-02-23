@@ -209,6 +209,7 @@ nav ul li a:hover {
         width: 90%; /* Make the cards fill more space on smaller screens */
     }
 }
+
 /* Tech Stack Section */
 #tech-stack {
     padding: 50px 20px;
@@ -222,26 +223,45 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-#tech-stack h3 {
-    text-align: center;
+/* Category Card */
+.category-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    margin-bottom: 30px; /* Space between category cards */
+    display: flex; /* Make the card a flex container */
+}
+
+/* Left Box (30%) */
+.category-heading {
+    width: 30%; /* Takes up 30% of the card width */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding-right: 20px; /* Space between left and right boxes */
+}
+
+.category-heading .category-icon {
+    width: 100px; /* Square image size */
+    height: 100px;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.category-heading h3 {
     font-size: 24px;
     color: #333;
-    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
 }
 
-.tech-stack-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Tech Row Layout */
-.tech-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between cards */
-    margin-bottom: 30px; /* Space between rows */
+/* Right Box (70%) */
+.tech-icons-grid {
+    width: 70%; /* Takes up 70% of the card width */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between icons */
 }
 
 /* Tech Card (Icon + Name) */
@@ -251,7 +271,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
     padding: 20px;
     text-align: center; /* Center text horizontally */
-    width: 150px; /* Width of each tech card */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -276,23 +295,6 @@ nav ul li a:hover {
     margin: 0;
     text-transform: capitalize; /* Make the name title case */
     text-align: center; /* Ensure text is centered */
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .tech-card {
-        width: calc(33.33% - 20px); /* 3 columns with gap included */
-        padding: 15px; /* Slightly reduce padding for mobile */
-    }
-
-    .tech-card img {
-        width: 48px; /* Smaller icons for mobile */
-        height: 48px;
-    }
-
-    .tech-card p {
-        font-size: 14px; /* Smaller text for mobile */
-    }
 }
 
 /* Bio Section */
